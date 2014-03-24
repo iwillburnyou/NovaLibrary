@@ -233,7 +233,32 @@ public class MainFrame extends JFrame {
 		 page_1.getVerticalScrollBar().setUnitIncrement(30);
 		 page_1.setVisible(false);
 	 	 contentPane.add(page_1);
-	 	 
+	 	 //–›œ–”È¿÷
+	 	 Page_2 page_a=new Page_2();
+		 final JScrollPane page_2=new JScrollPane(page_a);
+		 page_2.setBounds(0,120,1100,550);
+		 page_2.setHorizontalScrollBarPolicy( 
+		 JScrollPane.HORIZONTAL_SCROLLBAR_NEVER); 
+		 page_2.setVerticalScrollBarPolicy( 
+		 JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED); 
+		 JScrollBar bar_2 = page_2.getVerticalScrollBar();
+		 bar.setBackground(Color.WHITE);
+		 page_2.getVerticalScrollBar().setUnitIncrement(30);
+		 page_2.setVisible(false);
+	 	 contentPane.add(page_2);
+	 	 //Ω°øµ…˙ªÓ
+	 	 Page_3 page_b=new Page_3();
+		 final JScrollPane page_3=new JScrollPane(page_b);
+		 page_3.setBounds(0,120,1100,550);
+		 page_3.setHorizontalScrollBarPolicy( 
+		 JScrollPane.HORIZONTAL_SCROLLBAR_NEVER); 
+		 page_3.setVerticalScrollBarPolicy( 
+		 JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED); 
+		 JScrollBar bar_3 = page_2.getVerticalScrollBar();
+		 bar.setBackground(Color.WHITE);
+		 page_3.getVerticalScrollBar().setUnitIncrement(30);
+		 page_3.setVisible(false);
+	 	 contentPane.add(page_3);
 		 //≤Àµ•∞¥≈•
 		 final JButton button_1 = new JButton("New button");
 		 button_1.setFont(new Font("Œ¢»Ì—≈∫⁄", Font.PLAIN, 12));
@@ -247,6 +272,9 @@ public class MainFrame extends JFrame {
 		 		bacLabel_3.setLocation(280,8);
 		 		panel_1.setVisible(true);
 		 		panel_3.setVisible(true);
+		 		page_1.setVisible(false);
+		 		page_2.setVisible(false);
+		 		page_3.setVisible(false);
 		 	}
 		 });
 		 button_1.setBounds(275, 8, 110, 23);
@@ -267,6 +295,10 @@ public class MainFrame extends JFrame {
 		 		bacLabel_3.setLocation(520,8);
 		 		panel_1.setVisible(false);
 		 		panel_3.setVisible(false);
+		 		page_1.setVisible(false);
+		 		page_2.setVisible(true);
+		 		page_3.setVisible(false);
+		 	
 		 		
 		 	}
 		 });
@@ -285,6 +317,8 @@ public class MainFrame extends JFrame {
 		 		panel_1.setVisible(false);
 		 		panel_3.setVisible(false);
 		 		page_1.setVisible(true);
+		 		page_2.setVisible(false);
+		 		page_3.setVisible(false);
 		 	}
 		 		
 		 	
@@ -303,6 +337,10 @@ public class MainFrame extends JFrame {
 		 		bacLabel_3.setLocation(640,8);
 		 		panel_1.setVisible(false);
 		 		panel_3.setVisible(false);
+		 		page_1.setVisible(false);
+		 		page_2.setVisible(false);
+		 		page_3.setVisible(true);
+		 		
 		 	}
 		 });
 		 button_4.setBounds(640, 8, 110, 23);
@@ -720,8 +758,7 @@ public class MainFrame extends JFrame {
 		booklabel_1.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent arg0) {
-				label_3.setVisible(true);
-				
+				label_3.setVisible(true);		
 				label_3.setLocation(33,92);
 				
 			}

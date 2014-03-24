@@ -22,13 +22,15 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JButton;
 
-public class Page_1 extends JPanel {
+import javax.swing.JPanel;
+
+public class Page_2 extends JPanel {
 
 	/**
 	 * Create the panel.
 	 * @throws IOException 
 	 */
-	public Page_1() throws IOException {
+	public Page_2() throws IOException {
 		
 		this.setPreferredSize(new Dimension(1000,900));
 		setLayout(null);
@@ -38,7 +40,7 @@ public class Page_1 extends JPanel {
 		separator.setBounds(30, 50, 940, 2);
 		add(separator);
 		
-		JLabel corse_label_1 = new JLabel("\u57FA\u7840\u5FC5\u4FEE");
+		JLabel corse_label_1 = new JLabel("\u65F6\u5C1A\u6742\u5FD7");
 		corse_label_1.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent arg0) {
@@ -51,7 +53,7 @@ public class Page_1 extends JPanel {
 		corse_label_1.setBounds(40, 25, 110, 20);
 		add(corse_label_1);
 		
-		JLabel corse_label_2 = new JLabel("\u4EBA\u6587\u793E\u79D1");
+		JLabel corse_label_2 = new JLabel("\u6587\u5B66\u540D\u8457");
 		corse_label_2.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent arg0) {
@@ -66,7 +68,7 @@ public class Page_1 extends JPanel {
 		separator_1.setBounds(30, 225, 940, 2);
 		add(separator_1);
 		
-		JLabel corse_label_3 = new JLabel("\u4E13\u4E1A\u5B66\u4E60");
+		JLabel corse_label_3 = new JLabel("\u4F11\u95F2\u5C0F\u8BF4");
 		corse_label_3.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent arg0) {
@@ -81,7 +83,7 @@ public class Page_1 extends JPanel {
 		separator_2.setBounds(30, 400, 940, 2);
 		add(separator_2);
 		
-		JLabel corse_label_4 = new JLabel("\u5916\u8BED\u8003\u8BD5");
+		JLabel corse_label_4 = new JLabel("\u6F2B\u753B\u4E66");
 		corse_label_4.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent arg0) {
@@ -96,7 +98,7 @@ public class Page_1 extends JPanel {
 		separator_3.setBounds(30, 575, 940, 2);
 		add(separator_3);
 		
-		JLabel corse_label_5 = new JLabel("\u8003\u7814\u4E13\u9898");
+		JLabel corse_label_5 = new JLabel("\u5176\u4ED6");
 		corse_label_5.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent arg0) {
@@ -261,19 +263,19 @@ public class Page_1 extends JPanel {
 		booklabel_24.setBounds(800, 0, 130, 140);
 		panel_4.add(booklabel_24);
 		
-		setLabelBac("1",booklabel_1);
-		setLabelBac("2",booklabel_2);
-		setLabelBac("3",booklabel_3);
-		setLabelBac("4",booklabel_4);
-		setLabelBac("5",booklabel_5);
-		setLabelBac("6",booklabel_6);
+		setLabelBac("7",booklabel_1);
+		setLabelBac("8",booklabel_2);
+		setLabelBac("9",booklabel_3);
+		setLabelBac("7",booklabel_4);
+		setLabelBac("8",booklabel_5);
+		setLabelBac("9",booklabel_6);
 		
-		setLabelBac("1",booklabel_7);
-		setLabelBac("2",booklabel_8);
-		setLabelBac("3",booklabel_9);
-		setLabelBac("4",booklabel_10);
-		setLabelBac("5",booklabel_11);
-		setLabelBac("6",booklabel_12);
+		setLabelBac("7",booklabel_7);
+		setLabelBac("8",booklabel_8);
+		setLabelBac("9",booklabel_9);
+		setLabelBac("7",booklabel_10);
+		setLabelBac("8",booklabel_11);
+		setLabelBac("9",booklabel_12);
 		
 		setLabelBac("1",booklabel_13);
 		setLabelBac("2",booklabel_14);
@@ -346,3 +348,4 @@ public class Page_1 extends JPanel {
 			b.setIcon(img);
 		}
 }
+
